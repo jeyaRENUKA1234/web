@@ -18,6 +18,7 @@
 :root{
 	--primary-color:#00bcd4;
 	--secondry-color:#333333;
+	--bg-color:#f8feff;
 }
  /*column-largerdevice-num1*/
 .col-lg-1{
@@ -281,8 +282,8 @@ h1.logo a{
 }		 
               /*  about section style   */
 .abt-section{
-	background-color:#f8feff;
-	padding:50px 0;
+	background-color:var(--bg-color);
+	padding:80px 0;
 	
 }	
 .abt-image{
@@ -353,28 +354,119 @@ h1.logo a{
 	    /*   life-logo style  */
 		
 .life-logo{
-	background-color:#39312f;
-	padding:60px;
+	padding:40px 0;
 }
 .logos{
-	background-color:#ff5821;
-	height:80px;
-}		
+	padding:20px 25px;
+}
+.logos img{
+	width:100%;
+	height:auto;
+	filter:grayscale(100%);
+	opacity:0.5;
+}
+.logos:hover img{
+	filter:grayscale(0%);
+	opacity:1
+}
+.circle{
+	text-align:center;
+	padding:0 0 20px 0;
+}	
+.circle span{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	border:1px solid var(--primary-color);
+	border-radius:50%;
+	background-color:white;
+	opacity:0.8;
+	margin:0 2px;
+	cursor:pointer;
+}
+.circle span:hover{
+	background-color:var(--primary-color);
+}
+.circle span.active{
+	background-color:var(--primary-color);
+}	
        /*  services style  */
 	    
 .services-sect{
-	background-color:#ff5821;
-	padding:50px 0;
+	background-color:#ccebf133;
+	padding:70px 0 100px 0;
 }
 .lorem-title{
-	background-color:#39312f;
-	height:40px;
+	text-align:center;
 }	
-.lorem{
-	background-color:#39312f;
-	height:200px;
-    margin-top:40px;	
+.lorem-title h2{
+	color: #635551;
+	font-size:35px;
+	margin-bottom:20px;
+	font-family: 'Poppins', sans-serif;
+	font-weight:500;
 }
+.lorem-title p{
+	font-size:18px;
+	margin-bottom:30px;
+}
+.lorem{
+	background-color:;
+    margin-top:50px;
+	position:relative;
+	padding:45px 20px 30px;
+	box-shadow:0 0 8px #ccc;
+	text-align:center;
+}
+.lorem .service{
+	position:absolute;
+	top:-30px;
+	left:50%;
+	width:60px;
+	height:60px;
+	text-align:center;
+	line-height:60px;
+	color:#fff;
+	font-size:23px;
+	transform:translateX(-50%);
+	z-index:1;
+}
+.service:after{
+	content:"";
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	border:1px solid var(--primary-color);
+	border-radius:50%;
+	background-color:var(--primary-color);
+	z-index:-1;
+	transition:all 0.2s ease;
+}
+.lorem:hover .service:after{
+	transform: scale(1.2);
+	background-color:white;
+}
+.lorem:hover .service, .lorem:hover h3 a{
+	color: var(--primary-color);
+}
+.lorem h3 a{
+	display:inline-block;
+	font-size:22px;
+	margin-bottom:30px;
+	text-decoration:none;
+	color:#635551;
+}
+
+
+
+
+
+
+
+
+
        /* our plan  */
 
 .our-plan{
