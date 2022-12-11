@@ -411,7 +411,7 @@ h1.logo a{
 	margin-bottom:30px;
 }
 .lorem{
-	background-color:;
+	background-color:white;
     margin-top:50px;
 	position:relative;
 	padding:45px 20px 30px;
@@ -458,36 +458,106 @@ h1.logo a{
 	text-decoration:none;
 	color:#635551;
 }
-
-
-
-
-
-
-
-
-
-       /* our plan  */
+      /* our plan  */
 
 .our-plan{
-	background-color:#39312f;
-	padding:40px 0;
+	background-color:white;
+	padding:30px 0;
 }
-.plan{
-	background-color:#ff5821;
-	height:200px;
-	margin:20px;
+.head{
+	position:relative;
+	padding:15px 10px;
+
+}
+.plan img{
+	margin:10px 0;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-radius:20px;
+	height:100%;
+	width:100%;	
+
+}
+.dolor{
+	position:absolute;
+	top:250px;
+	left:42px;
+	background-color:#ffffffc4;
+	padding:10px 20px;
+	width:550px;
+	border-radius:10px;
+}
+.dolor h3{
+	font-family:'Raleway', sans-serif;
+	font-size:25px;
+	text-align:center;
+	margin-bottom:15px;
+	color:black;
+}
+.dolor h3:hover, .dolor p:hover,.dolor i:hover, span:hover{
+	color:white;
+
+}
+ .dolor:hover{
+	background-color:var(--primary-color);
+}
+.dolor p{
+	font-family:'Raleway', sans-serif;
+	margin-bottom:20px;
+	text-align:justify;
+	padding:0 20px;
+}
+.dolor i{
+	margin-bottom:15px;
+	font-size:15px;
+	padding-left:20px;
+}
+.dolor span:hover{
+	text-decoration:underline;
+	cursor:pointer;
 }
 	/* goodman image */  
 
 .good-image{
-	background-color:#ff5821;
+	background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url("text.jpg");
+	background-size:cover;
+	background-position:center;
 	padding:30px;
+	margin-bottom:50px;
 }
-.man-image{
-	background-color:#39312f;
-	height:400px;
-}			 
+.imga img{
+	max-width:8%;
+	border-radius:50%;
+	border:6px solid gray;
+	margin-top:50px;
+	margin-bottom:15px;
+}
+.jena{
+	color:white;
+	text-align:center;
+}
+.jena h2{
+	font-family:'Raleway', sans-serif;
+	margin-bottom:5px;
+}
+.jena h3{
+	font-family:"Open Sans", sans-serif;
+    font-weight: 400;
+	font-size:15px;
+	margin-bottom:30px;
+}
+p i{
+	color:gray;
+}
+.circl{
+	color:gray;
+	margin-top:30px;
+	margin-bottom:40px;
+}
+.circl span{
+	color:var(--primary-color);
+}		 
    /* port style*/
    
 .port-sect{
