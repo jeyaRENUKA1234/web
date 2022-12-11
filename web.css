@@ -475,8 +475,8 @@ h1.logo a{
 	background-repeat:no-repeat;
 	background-size:cover;
 	border-radius:20px;
-	height:100%;
-	width:100%;	
+	width:100%;
+	
 
 }
 .dolor{
@@ -495,13 +495,6 @@ h1.logo a{
 	margin-bottom:15px;
 	color:black;
 }
-.dolor h3:hover, .dolor p:hover,.dolor i:hover, span:hover{
-	color:white;
-
-}
- .dolor:hover{
-	background-color:var(--primary-color);
-}
 .dolor p{
 	font-family:'Raleway', sans-serif;
 	margin-bottom:20px;
@@ -517,6 +510,17 @@ h1.logo a{
 	text-decoration:underline;
 	cursor:pointer;
 }
+.dolor h3:hover, .dolor p:hover,.dolor i:hover, span:hover{
+	color:white;
+
+}
+
+.dolor:hover{
+	background-color:var(--primary-color);
+}
+
+
+
 	/* goodman image */  
 
 .good-image{
@@ -554,9 +558,14 @@ p i{
 	color:gray;
 	margin-top:30px;
 	margin-bottom:40px;
+	
+}
+.circl:hover{
+	cursor:pointer;
 }
 .circl span{
 	color:var(--primary-color);
+	cursor:pointer;
 }		 
    /* port style*/
    
