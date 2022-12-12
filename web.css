@@ -477,9 +477,20 @@ h1.logo a{
 	border-radius:15px;
 	padding:260px 20px 60px 20px;
 }
-.plan1:hover .dolor {
+.plan1:hover .dolor{
 	background-color:var(--primary-color);
 	color:white;
+}
+.plan1:hover .dolor a{
+	background-color:var(--primary-color);
+	color:white;
+}
+.dolor a:hover{
+	text-decoration:underline;
+}
+.plan1 a{
+	text-decoration:none;
+	color:black;
 }
 .plan2{
 	background-image:url("value2.jpg");
@@ -493,6 +504,20 @@ h1.logo a{
 	background-color:var(--primary-color);
 	color:white;
 }
+.plan2:hover .dolor a {
+	background-color:var(--primary-color);
+	color:white;
+	
+}
+.dolor a:hover
+{
+	text-decoration:underline;
+}
+.plan2 a
+{
+	 text-decoration:none;
+	 color:black;
+}
 .plan3{
 	background-image:url("value3.jpg");
 	background-position:center;
@@ -505,6 +530,19 @@ h1.logo a{
 	background-color:var(--primary-color);
 	color:white;
 }
+.plan3:hover .dolor a {
+	background-color:var(--primary-color);
+	color:white;
+}
+.dolor a:hover
+{
+	text-decoration:underline;
+}
+.plan3 a
+{
+	 text-decoration:none;
+	 color:black;
+}
 .plan4{
 	background-image:url("value4.jpg");
 	background-position:center;
@@ -516,6 +554,19 @@ h1.logo a{
 .plan4:hover .dolor {
 	background-color:var(--primary-color);
 	color:white;
+}
+.plan4:hover .dolor a {
+	background-color:var(--primary-color);
+	color:white;
+}
+.dolor a:hover
+{
+	text-decoration:underline;
+}
+.plan4 a
+{
+	 text-decoration:none;
+	 color:black;
 }
 .dolor{
 	position:absolute;
@@ -538,11 +589,15 @@ h1.logo a{
 	text-align:justify;
 	padding:0 20px;
 }
-.dolor i{
-	margin-bottom:15px;
-	font-size:15px;
-	padding-left:20px;
+.dolor span:hover{
+	 text-decoration:underline;
 }
+.dolor i{
+	margin-left:10px;
+}
+
+
+
 
 			/* goodman image */  
 
@@ -556,7 +611,7 @@ h1.logo a{
 .imga img{
 	max-width:8%;
 	border-radius:50%;
-	border:6px solid gray;
+	border:6px solid rgba(255,255,255,0.2);
 	margin-top:50px;
 	margin-bottom:15px;
 }
@@ -576,10 +631,12 @@ h1.logo a{
 }
 p i{
 	color:gray;
+	font-size:2px;
 }
 .circl{
 	color:gray;
 	margin-top:30px;
+	letter-spacing:2px;
 	margin-bottom:40px;
 	
 }
