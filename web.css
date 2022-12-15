@@ -7,7 +7,7 @@
 }
 .row{
 	 display:flex;
-	 flex-wrap:nowrap;
+	 flex-wrap:no-wrap;
 	 margin-right:-15px;
 	 margin-left:-15px;
 }
@@ -316,7 +316,7 @@ h1.logo a{
 	margin-bottom:20px;
 }
 .abt-content h2{
-	color:#4e4949c2;
+	color:black;
 	font-size:28px;
 }	
 .abt-content p{
@@ -400,7 +400,7 @@ h1.logo a{
 	text-align:center;
 }	
 .lorem-title h2{
-	color: #635551;
+	color: black;
 	font-size:35px;
 	margin-bottom:20px;
 	font-family: 'Poppins', sans-serif;
@@ -456,7 +456,7 @@ h1.logo a{
 	font-size:22px;
 	margin-bottom:30px;
 	text-decoration:none;
-	color:#635551;
+	color:black;
 }
       /* our plan  */
 
@@ -464,18 +464,19 @@ h1.logo a{
 	background-color:white;
 	padding:50px 0;
 }
-.head{
-	position:relative;
-	padding:10px 0px;
-
-}
-.plan1{
-	background-image:url("value1.jpg");
+.plan{
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
 	border-radius:15px;
-	padding:260px 20px 60px 20px;
+	height:320px;
+	margin:10px 0;
+	
+}
+.plan1{
+	background-image:url("value1.jpg");
+	position:relative;
+
 }
 .plan1:hover .dolor{
 	background-color:var(--primary-color);
@@ -494,11 +495,7 @@ h1.logo a{
 }
 .plan2{
 	background-image:url("value2.jpg");
-	background-position:center;
-	background-repeat:no-repeat;
-	background-size:cover;
-	border-radius:15px;
-	padding:260px 20px 60px 20px;
+	position:relative;
 }
 .plan2:hover .dolor {
 	background-color:var(--primary-color);
@@ -520,11 +517,7 @@ h1.logo a{
 }
 .plan3{
 	background-image:url("value3.jpg");
-	background-position:center;
-	background-repeat:no-repeat;
-	background-size:cover;
-	border-radius:15px;
-	padding:260px 20px 60px 20px;
+	position:relative;
 }
 .plan3:hover .dolor {
 	background-color:var(--primary-color);
@@ -545,11 +538,7 @@ h1.logo a{
 }
 .plan4{
 	background-image:url("value4.jpg");
-	background-position:center;
-	background-repeat:no-repeat;
-	background-size:cover;
-	border-radius:15px;
-	padding:260px 20px 60px 20px;
+	position:relative;
 }
 .plan4:hover .dolor {
 	background-color:var(--primary-color);
@@ -570,11 +559,11 @@ h1.logo a{
 }
 .dolor{
 	position:absolute;
-	top:160px;
-	left:42px;
+	bottom:20px;
+	left:30px;
 	background-color:#ffffffc4;
 	padding:10px 20px;
-	width:550px;
+	width:90%;
 	border-radius:10px;
 }
 .dolor h3{
@@ -657,63 +646,76 @@ p i{
 	   	font-family:"Poppins", sans;
 		font-size:30px;
 		padding:5px 0 30px 0;
-		color:#00000080;
+		color:black;
 }
 .port-title p{
 		font-family:'Raleway', sans-serif;
 		font-size:17px;
-		color:#00000080;
+		color:black;
+		padding-bottom:30px;
 }
 .port-list{
 	display: flex;
 	justify-content: center;
 	list-style-type: none;
-	padding:30px;
+	margin-bottom:40px;
+	text-transform:uppercase;
 }
 .port-list a{
-	padding:20px ;
 	text-decoration:none;
 	color:black;
-	
+	padding:8px 16px;
+	border-radius:25px;
 }
  
 .port-list li a:hover{
-	background-color:#00bcd426;
+	background-color:#00bcd45c;
+	color:var(--primary-color);
+}
+.port-list li a.active{
+	background-color:#00bcd45c;
 	width:20px;
 	height:20px;
     padding:10px 20px 10px 20px;
 	border-radius:25px;
 	color:var(--primary-color);
+
 }
 
 .thinks img{
 	width:100%;
+	height:auto;
+	display:block;
 	margin:10px;
 
 }
 .thinks{
 	position:relative;
+	overflow:hidden;
 	
 }
 .thinks-content{
 	position:absolute;
-	width:90%;
+	width:85%;
 	display:flex;
 	justify-content:space-between;
-	padding:10px;
+	padding:0 5px;
 	bottom:25px;
 	background-color:#ffffffc2;
 	border:soild 5px var(--primary-color);
 	left:35px;
 	opacity:0;
-    transition: all 0.5s ease-in-out;
+	transform:translateY(20px);
+    transition: all 0.5s ease;
+	align-items:center;
+	visibility:hidden;
 	
 	
 }
 .thinks-content h3{
 	font-size:20px;
 	font-family:'Raleway', sans-serif;
-	padding-bottom:8px;
+	padding-bottom:10px;
 	padding-top:5px;
 	font-weight: 600;
 	color:#00000080;
@@ -721,23 +723,27 @@ p i{
 .thinks-content p{
 	font-size:15px;
 	font-weight: 600;
-	padding-bottom:10px;
+	padding-bottom:8px;
 	color:#00000080;
 }
-.think-icon{
-	display:flex;
-	justify-content:flex-end;
-	font-size:24px;
+.think-icon {
 	
+	font-size:20px;
+	
+}
+.think-icon a {
+	color:black;
 }
 .think-icon i:hover{
 	color:var(--primary-color);
 }
 .think-icon i{
-	padding:15px;
+	padding:10px;
 }
 .thinks:hover .thinks-content{
 		opacity:1;
+	transform:translateY(0px);
+	visibility:visible;
 }
 
 	
@@ -758,7 +764,7 @@ p i{
 	font-family:'Raleway', sans-serif;
 	font-weight:400px;
 	margin-bottom:30px;
-	color:#00000080;
+	color:black;
 }
 .team-member img{
 	width:100%;
@@ -771,7 +777,7 @@ p i{
 }
 .team-title p{
 	font-size:17px;
-	color:#00000080;
+	color:black;
 }
 .name-sect{
 	width:100%;
@@ -794,6 +800,7 @@ p i{
 	position:absolute;
 	bottom:95px;
 	opacity:0;
+	left:0;
 }
 .icon-type a{
 	color:black;
@@ -810,7 +817,7 @@ p i{
 		 
 .prici-sect{
 	background-color:white;
-	padding:40px 0;
+	padding:20px 0;
 }
 .prici-title{
 	   text-align:center;
@@ -821,16 +828,23 @@ p i{
 	font-family:'Raleway', sans-serif;
 	font-weight:400px;
 	margin-bottom:30px;
-	color:#00000080;
+	color:black;
 }
 .prici-title p{
-	color:#00000080;
+	color:black;
 }	
 .prici-marks{
-	background-color:#ff5821;
-	height:300px;
+	background-color:var(--primary-color);
 	margin-top:40px;
-}	 
+	text-align:center;
+}	
+.free-sect{
+	font-family:'Raleway', sans-serif;
+	font-size:20px;
+	padding:15px;
+	color: #656262;
+    background-color:#f8f8f8e3;
+}
 		 /* fqa style*/
 		 
 .faq-sect{
