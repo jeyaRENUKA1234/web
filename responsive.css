@@ -96,11 +96,20 @@
 	.iteam-doller{
 		margin-left:0;
 	}
+	.rows{
+	margin:0px;
+    }
+	.services{
+		margin:20px 0;
+	}
 	.footer-sect{
 		text-align:center;
 	}
 	.abt-content{
 		padding:18px 0 10px 0px;
+	}
+	.plan{
+		border-radius:5px;
 	}
 	.abt-content h5{
 		margin-left:0;
@@ -121,6 +130,70 @@
 		text-align:center;
 		margin-top:5px;
 	}
+	.contact-info{
+		padding:0 20px;
+	}
+	.contact-info span>i{
+		font-size:15px;
+	}
+	.doller {
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: #ffffffa3;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+}
+@media(min-width:768px){
+	.col-ls-1{
+	    width:8.33%;
+		flex:0 0 auto;
+			}
+	.col-ls-2{
+	    width:16.66%;	
+        flex:0 0 auto;		  
+			}
+	.col-ls-3{
+	    width:25%;
+        flex:0 0 auto;		  
+			}
+	.col-ls-4{
+	    width:33.33%;
+		flex:0 0 auto;
+			}
+	.col-ls-5{
+	    width:41.6%;
+        flex:0 0 auto;		  
+			}
+	.col-ls-6{
+	    width:50%;
+        flex:0 0 auto;		  
+			}
+	.col-ls-7{
+	    width:58.3%;
+        flex:0 0 auto;		  
+		}
+	.col-ls-8{
+	      width:66.66%;	  
+		    flex:0 0 auto;
+		}
+	.col-ls-9{
+	      width:75%;	
+            flex:0 0 auto;		  
+		}
+	.col-ls-10{
+	      width:83.33%;	
+           flex:0 0 auto;		  
+	}
+	.col-ls-11{
+	      width:91.66%;
+           flex:0 0 auto;		  
+		}
+	.col-ls-12{
+	      width:100%;
+		   flex:0 0 auto;
+		 }
 }
 @media(min-width:1300px)
 {
