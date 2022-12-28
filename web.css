@@ -1,7 +1,7 @@
 
 /*-- commen style--*/
 .container{
-	width:1320px;
+	width:100%;
 	margin:0 auto;
 	padding:0 15px;
 }
@@ -36,42 +36,7 @@
 	text-align:center;
 }
  /*column-largerdevice-num1*/
-.col-lg-1{
-	      width:8.33%;
-}
-.col-lg-2{
-	      width:16.66%;		 
-}
-.col-lg-3{
-	      width:25%;		 
-}
-.col-lg-4{
-	      width:33.33%;
-}
-.col-lg-5{
-	      width:41.6%;		 
-}
-.col-lg-6{
-	      width:50%;		 
-}
-.col-lg-7{
-	      width:58.3%;		 
-}
-.col-lg-8{
-	      width:66.66%;	  
-}
-.col-lg-9{
-	      width:75%;	 
-}
-.col-lg-10{
-	      width:83.33%;		 
-}
-.col-lg-11{
-	      width:91.66%;		  
-}
-.col-lg-12{
-	      width:100%;
-		 }
+
 .justify-content-start{
 	   justify-content:flex-start !important;
 	}
@@ -309,6 +274,7 @@ h1.logo a{
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
+	height:500px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -903,6 +869,9 @@ p i{
     text-align: center;
 	border-radius:5px;
 }
+.btn-type:hover{
+	opacity:0.6;
+}
 		 /* fqa style*/
 		 
 .faq-sect{
@@ -958,13 +927,13 @@ p i{
 	padding:30px 0;
 }
 .contact-detail{
-	margin:60px 150px;
+	margin:60px 50px;
 }
 .contact-icon{
 	position:relative;
 	padding-left:105px;
 	box-shadow:0 0 30px rgb(210 205 210 /70%);
-	padding:25px ;
+	padding:25px;
 }
 .contact-icon i{
 	position:absolute;
