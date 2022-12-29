@@ -893,7 +893,7 @@ p i{
 		 
 .faq-sect{
 	background-color:#00bcd414;
-	padding:60px 0;
+	padding:80px 0;
 }
 .faq-title{
 	text-align:center;
@@ -927,13 +927,12 @@ p i{
 	margin-top:30px ;
 	padding:20px 0;
 	background-color:#ffffffa3;
-	width:90%;
 	display:flex;
 	justify-content:space-between;
 }
 .iteam-doller{
-	text-align:center;
-	margin-left:100px;
+	flex-direction:column;
+	padding:0 120px;
 }
 .doller:hover a{
 	color:var(--primary-color);

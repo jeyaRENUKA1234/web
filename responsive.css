@@ -92,6 +92,7 @@
 	}
 	.iteam-doller{
 		margin-left:0;
+		padding:0;
 	}
 	.rows{
 	margin:0px;
@@ -231,10 +232,6 @@
 	.read{
 		padding:10px;
     }
-		/*good man*/
-	.imga img{
-		max-width:15%;
-	} 
 		/*team sect*/
 	.name-sect{
 		margin-bottom:30px;
@@ -250,6 +247,7 @@
 	}
 	.iteam-doller {
      margin:0;
+	 padding:40px 0;
 	}
 	
 }
@@ -271,7 +269,7 @@
 {
 	.container
 	{
-		width:1250px;
+		width:1230px;
 	}
 	.col-lg-1{
 		flex:0 0 auto;
