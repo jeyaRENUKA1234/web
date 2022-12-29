@@ -4,6 +4,7 @@
 	width:100%;
 	margin:0 auto;
 	padding:0 15px;
+	position:relative;
 }
 .row{
 	 display:flex;
@@ -64,6 +65,9 @@
 .align-items-baseline{
 	align-items:baseline !important;
 	
+}
+.d-none{
+	display:none;
 }
 .btn{
 	display:inline-block;
@@ -139,6 +143,18 @@ h1.logo a{
 	color:black;
 	padding:5px 15px;
 	font-size:15px;
+}
+.menu-button{
+	position:absolute;
+	top:0px;
+	right:40px;
+	width:40px;
+	height:auto;
+	padding:0;
+	background:transparent;
+	border:0;
+	box-shadow:none;
+	font-size:30px;
 }
 .nav-link a:hover{
 	 color:#00CED1;
@@ -518,6 +534,7 @@ h1.logo a{
 {
 	text-decoration:underline;
 }
+
 .plan3 a
 {
 	 text-decoration:none;
